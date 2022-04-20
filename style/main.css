@@ -1,0 +1,145 @@
+:root {
+    --fundo: #2e344a;
+    --vermelho: red;
+    --preto: #141414;
+    --branco: white;   
+    --cinza: #AAA; 
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /* garante que os elementos não ultrapassem a borda da caixa em que estão inseridos */
+}
+
+/* elementos base */
+
+body {
+    background: var(--fundo); 
+    font-family: 'Arial', Times, serif;
+    color: var(--branco);    
+ }
+ 
+header .container {
+     display: flex;
+     flex-direction: row; /* row já é o valor default */
+     align-items: center;
+     justify-content: space-between;     
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
+
+
+/* filme principal */
+
+ .show-case{
+    font-size: 16px;
+    background: url('../img/movies/show-case.jpg');
+
+    height: 400px;
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+
+ .show-case .container {
+    width: 70%;
+}
+
+ .show-case .description {
+    margin-top: 10px;
+    margin-bottom: 40px;  
+ }
+
+ .show-case .container .title {
+    margin-top: 20px;
+    font-size: 40px;
+    color: var(--preto);
+    font-style: italic;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+
+ .button {
+    background-color: rgba(0,0,0,50%); /* efeito de tranparência */
+    border: none;
+    color: var(--branco);
+
+    padding: 15px 30px; /* primeito valor é para top e bottom e o segundo valor é pra right e left */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+ }
+
+ .button:hover {
+     background-color: var(--branco);
+     color: var(--preto);
+ }
+
+ .button i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.show-case .container {
+    width: 70%;
+}
+
+/* DIV Carousel */
+
+.carousel {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel .item {
+    margin-top: 10px;
+}
+
+
+
+
+.mini-button {
+    cursor: pointer;
+}
+
+
+
+/* footer */
+.footer {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: var(--preto);
+    text-align: center;        
+}
+
+
+
+
+
